@@ -1,14 +1,14 @@
-# Gwent-Online
+# 在线昆特牌（汉化版）
 
-# Introduction
-Not-Gwent-Online is a standalone multiplayer version of Gwent, a card game from The Witcher 3. 
+# 介绍
+Not-Gwent-Online 是一款昆特牌玩法的独立游戏，昆特牌玩法源自游戏《巫师3》。
 
-# Install
-## - Requirements
-- [node.js](https://nodejs.org/) installed
-- [GraphicsMagick](http://www.graphicsmagick.org) installed (for generating sprites)
+# 安装
+## - 需求
+- 安装 [node.js](https://nodejs.org/)
+- 安装 [GraphicsMagick](http://www.graphicsmagick.org)（用于生成精灵（Sprites））
 
-## - Build
+## - 编译
 
 ```sh
 cd ~/myWebserverRoot
@@ -19,15 +19,19 @@ npm run build
 ```
 
 
-## - Config
-- go to /public and open Config.js
-- change hostname to your address. (e.g., "192.168.123.1") <br>Make sure you don't have a trailing slash after your IP or address. (e.g., "192.168.123.1/")
+## - 配置
+- 打开 /public/Config.js
+- 将 hostname 修改为你的主机地址。（如“192.168.123.1”） <br>请确保地址后面没有斜杠（如“192.168.123.1/”）
 
-## - Start Server
+## - 启动服务器
 ```sh
 cd ~/myProjectDirectory/not-gwent-online
 node server/server.js
 ```
 
-## - Start Client
-- Open your browser and go to e.g. "http://192.168.123.1:3000"
+## - 启动客户端
+- 打开浏览器并访问：“http://192.168.123.1:3000” （具体地址跟你的本机和配置有关）
+
+# 关于汉化版
+
+- 汉化版由 jayasme 汉化，游戏中使用的图片资源版权为 CD Projekt S.A. 所有，游戏代码归 Github 用户 exane 所有，本汉化代码由 exane 上传的开源代码（ https://github.com/exane/not-gwent-online ）修改而来，但未经 exane 本人直接授权同意。
