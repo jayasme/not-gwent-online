@@ -67,27 +67,27 @@
 
     <div class="container-form-landing">
 
-      <input type="text" placeholder="Username" class="field-session field-username name-input" autofocus value="{{name}}">
+      <input type="text" placeholder="用户名" class="field-session field-username name-input" autofocus value="{{name}}">
 
       <select id="deckChoice" class="field-session">
-        <option value="random">Deck: Random</option>
-        <option value="northern">Deck: Northern Realms</option>
-        <option value="scoiatael">Deck: Scoia'tael</option>
-        <option value="monster">Deck: Monster</option>
-        <option value="nilfgaardian">Deck: Nilfgaardian</option>
+        <option value="random">阵营：随机</option>
+        <option value="northern">阵营：北方阵营</option>
+        <option value="scoiatael">阵营：松鼠党</option>
+        <option value="monster">阵营：怪物</option>
+        <option value="nilfgaardian">阵营：尼弗迦德</option>
       </select>
 
       <div class="wrap-btn-action btn-register-action startMatchmaking">
-        <input type="submit" value="Search Opponent" class="btn-action">
+        <input type="submit" value="开始游戏" class="btn-action">
         <i class="icon-action-load image-gif-loader"></i>
       </div>
 
       <p class="teaser-landing">
         {{#if serverOffline}}
-          <span>Server Status: <span class="status-offline">Offline</span></span>
+        <span>服务器状态：<span class="status-offline">离线</span></span>
         {{else}}
-          <span>Player online: <span class="nr-player-online">0</span></span><br>
-          <span>Server Status: <span class="status-online">Online</span></span>
+        <span>在线玩家：<span class="nr-player-online">0</span></span><br>
+        <span>服务器状态：<span class="status-online">在线</span></span>
         {{/if}}
       </p>
 

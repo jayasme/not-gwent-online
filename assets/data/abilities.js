@@ -2,7 +2,7 @@ module.exports = {
 
   "agile": {
     name: "agile",
-    description: "Agile: Can be placed in either the Close Combat or Ranged Combat row. Cannot be moved once placed.",
+    description: "敏捷：可被放置在近战或远程行中。一旦放置后不可移动。",
     cancelPlacement: true,
     onBeforePlace: function(card){
       var self = this;
@@ -19,7 +19,7 @@ module.exports = {
   },
   "medic": {
     name: "medic",
-    description: "Medic: Choose one card from your discard pile (excluding heroes / special cards) to play instantly.",
+    description: "医疗：立刻从弃牌堆中选择一张卡复活（英雄或特殊卡除外）。",
     waitResponse: true,
     onAfterPlace: function(card){
       var discard = this.getDiscard();
@@ -33,12 +33,12 @@ module.exports = {
         cards: JSON.stringify(discard)
       }, true);
 
-      this.sendNotificationTo(this.foe, this.getName() + " chooses a card from discard pile.")
+      this.sendNotificationTo(this.foe, this.getName() + " 从弃牌堆中选择一张牌。")
     }
   },
   "morale_boost": {
     name: "morale_boost",
-    description: "Morale Boost: Adds +1 strength to all units in the row, excluding itself.",
+    description: "士气提升：给同行所有单位+1点数，自己除外。",
     onEachCardPlace: function(card){
       var field = this.field[card.getType()];
       var id = card.getID();
@@ -63,7 +63,7 @@ module.exports = {
   },
   "muster": {
     name: "muster",
-    description: "Muster: Find any cards with the same name in your deck and play them instantly.",
+    description: "捆绑：将所有抽牌堆和手牌中同类型的卡牌立刻放置在战场中。",
     onAfterPlace: function(card){
       var musterType = card.getMusterType();
       var self = this;
@@ -89,21 +89,21 @@ module.exports = {
   },
   "tight_bond": {
     name: "tight_bond",
-    description: "Tight Bond: Place next to a card with the name same to double the strength of both cards.",
+    description: "绑定：放置在同名卡牌旁边可使两者点数翻倍。",
     tightBond: true
   },
   "spy": {
     name: "spy",
-    description: "Spy: Place on your opponents battlefield (counts towards their total strength) then draw two new cards from your deck.",
+    description: "间谍：放置在对手的战场中（但会给对方增加点数），然后摸取两张牌。",
     changeSide: true,
     onAfterPlace: function(){
       this.draw(2);
-      this.sendNotification(this.getName() + " activated Spy! Draws +2 cards.")
+      this.sendNotification(this.getName() + " 使用了间谍！摸2张牌。")
     }
   },
   "weather_fog": {
     name: "weather_fog",
-    description: "Sets the strength of all Ranged Combat cards to 1 for both players.",
+    description: "大雾：使双方玩家的所有远程单位点数变为1。",
     weather: 1/*,
     onEachTurn: function(card){
       var targetRow = card.constructor.TYPE.RANGED;
@@ -134,7 +134,7 @@ module.exports = {
   },
   "weather_rain": {
     name: "weather_rain",
-    description: "Sets the strength of all Siege Combat cards to 1 for both players.",
+    description: "暴雨：使双方玩家的所有攻城单位点数变为1。",
     weather: 2
     /*onEachTurn: function(card){
       var targetRow = card.constructor.TYPE.SIEGE;
@@ -165,7 +165,7 @@ module.exports = {
   },
   "weather_frost": {
     name: "weather_frost",
-    description: "Sets the strength of all Close Combat cards to 1 for both players.",
+    description: "霜冻：使双方玩家的所有近战单位点数变为1。",
     weather: 0
     /*
       onEachTurn: function(card){
@@ -197,7 +197,7 @@ module.exports = {
   },
   "weather_clear": {
     name: "weather_clear",
-    description: "Removes all Weather Card (Biting Frost, Impenetrable Fog and Torrential Rain) effects.",
+    description: "移除所有天气卡牌（霜冻、暴雨及大雾）。",
     weather: 5
     /*onAfterPlace: function(card){
       var targetRow = card.constructor.TYPE.WEATHER;
@@ -220,29 +220,29 @@ module.exports = {
   },
   "decoy": {
     name: "decoy",
-    description: "Decoy: Swap with a card on the battlefield to return it to your hand.",
+    description: "诱饵：将己方战场中的一张牌替换回自己手中。",
     replaceWith: true
   },
   "scorch_card": {
     name: "scorch",
-    description: "Scorch: Discard after playing. Kills the strongest card(s) in the battlefield.",
+    description: "灼烧：摧毁双方战场上点数最高的卡牌。",
     scorch: true,
     removeImmediately: true,
     nextTurn: true
   },
   "scorch": {
     name: "scorch",
-    description: "Scorch: Destroy your enemy's strongest close combat unit(s) if the combined strength of all of his or her combat unit(s) is 10 or more.",
+    description: "灼烧: 如果敌人近战行中有大于或等于10的单位，摧毁其中点数最高的那张牌。",
     scorchMelee: true
   },
   "commanders_horn": {
     name: "commanders_horn",
-    description: "Commander's Horn: Doubles the strength of all unit cards in a row. Except this card.",
+    description: "战斗号角：使一行中的所有单位点数翻倍。",
     commandersHorn: true
   },
   "commanders_horn_card": {
     name: "commanders_horn",
-    description: "Commander's Horn: Doubles the strength of all unit cards in a row. Limited to 1 per row.",
+    description: "战斗号角：使一行中的所有单位点数翻倍。",
     cancelPlacement: true,
     commandersHorn: true,
     isCommandersHornCard: true
@@ -266,7 +266,7 @@ module.exports = {
   },
   "foltest_leader3": {
     name: "",
-    description: "Doubles the strength of all Siege units, unless a Commander's Horn is already in play on that row",
+    description: "使所有攻城单位的点数翻倍，除非已经有战斗号角在生效。",
     onActivate: function(){
       this.setHorn("commanders_horn", 2);
     }
@@ -290,7 +290,7 @@ module.exports = {
   },
   "francesca_leader2": {
     name: "Francesca Findabair the Beautiful",
-    description: "Doubles the strength of all your Ranged Combat units (unless a Commander's Horn is also present on that row).",
+    description: "使所有远程单位的点数翻倍，除非已经有战斗号角在生效。",
     onActivate: function(){
       this.setHorn("commanders_horn", 1);
     }
@@ -328,14 +328,14 @@ module.exports = {
   },
   "eredin_leader4": {
     name: "Eredin King of the Wild Hunt",
-    description: "Double the strength of all your Close Combat units (unless a Commander's Horn is also present on that row).",
+    description: "使所有近战单位的点数翻倍，除非已经有战斗号角在生效。",
     onActivate: function(){
       this.setHorn("commanders_horn", 0);
     }
   },
   "emreis_leader4": {
     name: "Emhyr vas Emreis the Relentless",
-    description: "Draw a card from your opponent's discard pile.",
+    description: "从对手的弃牌堆中摸取一张牌。",
     waitResponse: true,
     onActivate: function(card){
       var discard = this.foe.getDiscard();
@@ -352,6 +352,6 @@ module.exports = {
   },
   "hero": {
     name: "hero",
-    description: "Hero: Not affected by special cards, weather cards or abilities."
+    description: "英雄：不受任何特殊卡牌、天气卡牌和其它效果影响。"
   }
 }

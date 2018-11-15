@@ -1,9 +1,8 @@
 //@import "style";
-@import "backbone.modal";
-@import "backbone.modal.theme";
-@import "effects";
-@import "base";
-
+@import 'backbone.modal';
+@import 'backbone.modal.theme';
+@import 'effects';
+@import 'base';
 
 $height: 600px;
 $game-height: 800px;
@@ -11,7 +10,7 @@ $game-height: 800px;
 .container {
   min-width: 970px;
   width: 970px important;
-  background: rgba(5,5,5,0.25);
+  background: rgba(5, 5, 5, 0.25);
   padding: 20px;
   margin-bottom: 150px;
   //margin-top: 65px;
@@ -57,7 +56,7 @@ $game-height: 800px;
 
     -o-animation: WoobWoob linear 2s;
     -o-animation-iteration-count: infinite;
-    
+
     -ms-animation: WoobWoob linear 2s;
     -ms-animation-iteration-count: infinite;
 
@@ -122,14 +121,15 @@ $game-height: 800px;
   /*clear: both;*/
   margin: 0px;
   padding: 0px;
-  background: url("../../assets/hunting-horn.png") no-repeat;
+  background: url('../../assets/hunting-horn.png') no-repeat;
   height: 100px;
   //width: 64px;
   background-position: 7px 20px;
   //opacity: 0.4;
 }
 
-.field:hover, .field-single:hover {
+.field:hover,
+.field-single:hover {
   //box-shadow: 0px 0px 10px #000;
 }
 
@@ -141,12 +141,12 @@ $game-height: 800px;
 .field-hand {
   //margin-top: 20px;
   border: none;
-  transition: all .2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(6, 13, 22, .8);
+  background: rgba(6, 13, 22, 0.8);
   height: 110px;
   z-index: 20;
 
@@ -220,43 +220,43 @@ $game-height: 800px;
   margin: 0 !important;
 }
 
-  .button-pass {
-    width: 100%;
-    border: 0;
-    background: #3f4c5b; 
-    padding: 5px 0;
-    color: #fff;
-    text-transform: uppercase;
-    fon-size: 15px;
-    position: absolute;
-    z-index: 21;
-    margin-top: -33px;
+.button-pass {
+  width: 100%;
+  border: 0;
+  background: #3f4c5b;
+  padding: 5px 0;
+  color: #fff;
+  text-transform: uppercase;
+  fon-size: 15px;
+  position: absolute;
+  z-index: 21;
+  margin-top: -33px;
 
-    &:hover {
-      background: lighten(#3f4c5b, 10%);
-    }
-
-    &:active {
-      background: #3f4c5b;
-    }
+  &:hover {
+    background: lighten(#3f4c5b, 10%);
   }
+
+  &:active {
+    background: #3f4c5b;
+  }
+}
 
 .game-info {
   height: $game-height/2 - 140px;
   width: 100%;
   //border: 1px solid black;
   //background: rgba(252, 219, 125, 0.1);
-  background: rgba(0,0,0, .4);
+  background: rgba(0, 0, 0, 0.4);
   position: relative;
 
   div {
     margin-bottom: 5px;
     padding: 0;
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .icon-hand-card {
-    background: url("../../assets/card_icon.png") no-repeat;
+    background: url('../../assets/card_icon.png') no-repeat;
     height: 50px;
     width: 50px;
     display: block;
@@ -266,7 +266,7 @@ $game-height: 800px;
 }
 
 .removeBackground {
-  background: rgba(0,0,0, .4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .mid-line {
@@ -283,14 +283,13 @@ $game-height: 800px;
   height: $height/2;
 }
 
-
 .card {
   /*border: 2px solid black;
   float: left;
   margin: 3px;
-  overflow: hidden;*//*
+  overflow: hidden;*/ /*
   height: 90px;
-  overflow: hidden;*//*
+  overflow: hidden;*/ /*
   border: none !important;
   margin: 0 !important;
   border-radius: 0 !important;
@@ -298,7 +297,8 @@ $game-height: 800px;
   height: 93px !important;
 */
 
-  i {/*
+  i {
+    /*
     display: block;*/
     //transform: scale(1);
   }
@@ -327,7 +327,7 @@ $game-height: 800px;
     //padding-left: -4px;
     height: 30px;
     width: 30px;
-    background: url("../../assets/card_strength_border.png") no-repeat;
+    background: url('../../assets/card_strength_border.png') no-repeat;
     z-index: 11;
 
     span {
@@ -357,16 +357,16 @@ $game-height: 800px;
 
 .field-discard,
 .field-deck {
-  background: rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, 0.6);
   float: left;
   width: 65px;
   height: 90px;
   cursor: pointer;
   margin: 20px 0;
-  transition: all .2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 
   &:hover {
-    background: rgba(0,0,0,.9);
+    background: rgba(0, 0, 0, 0.9);
   }
 
   i {
@@ -381,12 +381,12 @@ $game-height: 800px;
 }
 
 .discard-skull {
-  background: url("../../assets/discard.png") no-repeat;
+  background: url('../../assets/discard.png') no-repeat;
   margin: 23px auto 0 auto;
 }
 
 .icon-deck {
-  background: url("../../assets/card_icon.png") no-repeat;
+  background: url('../../assets/card_icon.png') no-repeat;
   margin: 13px auto 0 auto;
 }
 
@@ -412,7 +412,6 @@ $game-height: 800px;
       }
     }
   }
-
 }
 
 .gwent-lives {
@@ -424,9 +423,9 @@ $game-height: 800px;
     height: 40px;
     width: 40px;
     margin: 0 10px 0 0;
-    background: url("../../assets/ruby-grey.png");
+    background: url('../../assets/ruby-grey.png');
     &.ruby {
-      background: url("../../assets/ruby.png");
+      background: url('../../assets/ruby.png');
     }
   }
 }
@@ -434,41 +433,111 @@ $game-height: 800px;
 .field {
   &.field-frost {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+60,709bff+100&amp;0+60,1+100 */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 60%, rgba(112,155,255,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%,rgba(255,255,255,0)), color-stop(100%,rgba(112,155,255,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(112,155,255,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(112,155,255,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(112,155,255,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(112,155,255,1) 100%); /* W3C */
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(112, 155, 255, 1) 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(60%, rgba(255, 255, 255, 0)),
+      color-stop(100%, rgba(112, 155, 255, 1))
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(112, 155, 255, 1) 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(112, 155, 255, 1) 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(112, 155, 255, 1) 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(112, 155, 255, 1) 100%
+    ); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#709bff',GradientType=0 ); /* IE6-9 */
-
-
   }
   &.field-fog {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+60,9b9b9b+100&amp;0+60,1+100 */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 60%, rgba(155,155,155,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%,rgba(255,255,255,0)), color-stop(100%,rgba(155,155,155,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(155,155,155,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(155,155,155,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(155,155,155,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(155,155,155,1) 100%); /* W3C */
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(155, 155, 155, 1) 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(60%, rgba(255, 255, 255, 0)),
+      color-stop(100%, rgba(155, 155, 155, 1))
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(155, 155, 155, 1) 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(155, 155, 155, 1) 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(155, 155, 155, 1) 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(155, 155, 155, 1) 100%
+    ); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
-
-
   }
   &.field-rain {
-
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+60,133511+100&amp;0+60,1+100 */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 60%, rgba(19,53,17,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%,rgba(255,255,255,0)), color-stop(100%,rgba(19,53,17,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(19,53,17,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(19,53,17,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(19,53,17,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(19,53,17,1) 100%); /* W3C */
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(19, 53, 17, 1) 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(60%, rgba(255, 255, 255, 0)),
+      color-stop(100%, rgba(19, 53, 17, 1))
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(19, 53, 17, 1) 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(19, 53, 17, 1) 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(19, 53, 17, 1) 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(19, 53, 17, 1) 100%
+    ); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#133511',GradientType=0 ); /* IE6-9 */
-
-
-
   }
 }
 
@@ -490,7 +559,6 @@ $game-height: 800px;
 }
 
 .waiting-for-opponent {
-
   // temp
   //display: none;
 
@@ -519,22 +587,22 @@ $game-height: 800px;
 
 .waiting-for-opponent,
 .notification-left {
-   animation: Woob linear 2s;
-   animation-iteration-count: infinite;
-   transform-origin: 50% 50%;
-   -webkit-animation: Woob linear 2s;
-   -webkit-animation-iteration-count: infinite;
-   -webkit-transform-origin: 50% 50%;
-   -moz-animation: Woob linear 2s;
-   -moz-animation-iteration-count: infinite;
-   -moz-transform-origin: 50% 50%;
-   -o-animation: Woob linear 2s;
-   -o-animation-iteration-count: infinite;
-   -o-transform-origin: 50% 50%;
-   -ms-animation: Woob linear 2s;
-   -ms-animation-iteration-count: infinite;
-   -ms-transform-origin: 50% 50%;
- }
+  animation: Woob linear 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: Woob linear 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: Woob linear 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: Woob linear 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: Woob linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
 
 .notification-left {
   background: #c64b4b;
@@ -565,14 +633,13 @@ $game-height: 800px;
   top: 0;
   z-index: 200;
   width: 500px;
-  left: calc(50% - (500px/2));
+  left: calc(50% - (500px / 2));
 }
 
 .notification {
   height: 0;
   /*margin-left: 250px;
   margin-right: 250px;*/
-
 
   .alert {
     margin-bottom: 0;
@@ -589,70 +656,69 @@ $game-height: 800px;
 }
 
 .image-gif-loader {
-  background: url("../../assets/content-load.gif");
+  background: url('../../assets/content-load.gif');
   display: block;
   height: 32px;
   width: 32px;
   margin-left: 10px;
-
 }
 
-@keyframes Woob{
+@keyframes Woob {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   50% {
-    opacity:0.8;
+    opacity: 0.8;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
-@-moz-keyframes Woob{
+@-moz-keyframes Woob {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   50% {
-    opacity:0.8;
+    opacity: 0.8;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes Woob {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   50% {
-    opacity:0.8;
+    opacity: 0.8;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes Woob {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   50% {
-    opacity:0.8;
+    opacity: 0.8;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-ms-keyframes Woob {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   50% {
-    opacity:0.8;
+    opacity: 0.8;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }

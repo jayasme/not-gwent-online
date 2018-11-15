@@ -56,7 +56,7 @@ Battleside = (function() {
 
       ability.onActivate.apply(self, [leaderCard]);
       leaderCard.setDisabled(true);
-      self.battle.sendNotification(self.getName() + " activated " + leaderCard.getName() + "! (leadercard)");
+      self.battle.sendNotification(self.getName() + " 激活了 " + leaderCard.getName() + "! (leadercard)");
       self.update();
       if(ability.waitResponse) {
         return;
@@ -91,7 +91,7 @@ Battleside = (function() {
       self.setPassing(true);
       self.update();
 
-      self.battle.sendNotification(self.getName() + " passed!");
+      self.battle.sendNotification(self.getName() + " 跳过了回合！");
       //self.runEvent("NextTurn", null, [self.foe]);
       self.endTurn();
     })
@@ -118,7 +118,7 @@ Battleside = (function() {
     this.receive("emreis_leader4:chooseCardFromDiscard", function(data) {
       if(!data) {
         self.endTurn();
-        self.sendNotificationTo(self.foe, self.getName() + " takes no card from your discard pile (or there wasn't any card to choose)");
+        self.sendNotificationTo(self.foe, self.getName() + " 没有从你的弃牌堆中（无牌可选）");
         //self.runEvent("NextTurn", null, [self.foe]);
         return;
       }
@@ -134,7 +134,7 @@ Battleside = (function() {
       self.foe.removeFromDiscard(card);
 
       //self.placeCard(card);
-      self.sendNotificationTo(self.foe, self.getName() + " takes " + card.getName() + " from your discard pile into his hand.");
+      self.sendNotificationTo(self.foe, self.getName() + " 从你的弃牌堆中抽取了 " + card.getName() + " 。");
       self.hand.add(card);
 
       self.endTurn();
@@ -457,7 +457,7 @@ Battleside = (function() {
       });
       self.hand.remove(card);
 
-      self.battle.sendNotification(self.getName() + " played " + card.getName());
+      self.battle.sendNotification(self.getName() + " 使用了 " + card.getName());
     })
   }
 
@@ -606,7 +606,7 @@ Battleside = (function() {
           self.update();
           //self.runEvent("NextTurn", null, [self.foe]);
           self.endTurn();
-          self.battle.sendNotification(self.getName() + " played Decoy!");
+          self.battle.sendNotification(self.getName() + " 放置了诱饵！");
         })
       }
       if(ability.onEachTurn) {
@@ -663,7 +663,7 @@ Battleside = (function() {
 
     if(targetRow === Card.TYPE.WEATHER) {
       if(!onRoundEnd) {
-        this.battle.sendNotification(this.getName() + " played Clear Weather!");
+        this.battle.sendNotification(this.getName() + " 使用了晴天！");
       }
       field = this.field[targetRow];
       field.removeAll();
@@ -703,10 +703,10 @@ Battleside = (function() {
     var side = this.foe;
     var field = side.field[Card.TYPE.CLOSE_COMBAT];
 
-    this.battle.sendNotification(this.getName() + " played " + card.getName());
+    this.battle.sendNotification(this.getName() + " 使用了 " + card.getName());
 
     if(field.getScore() < 10) {
-      this.battle.sendNotification("Scorch: Score is under 10! Nothing happens.");
+      this.battle.sendNotification("灼烧：没有找到力量超过10点的卡牌。");
       return;
     }
 
@@ -737,7 +737,7 @@ Battleside = (function() {
     var highest = 0;
     var self = this;
 
-    this.battle.sendNotification(this.getName() + " played " + card.getName());
+    this.battle.sendNotification(this.getName() + " 使用了 " + card.getName());
 
     cards.forEach(function(card) {
       if(noHeroes && card.hasAbility("hero")) return;
@@ -758,7 +758,7 @@ Battleside = (function() {
       side.addToDiscard(removed);
     })
 
-    var txt = "Scorch destroyed:";
+    var txt = "灼烧摧毁了 ";
     for(var i = 0; i < res.length; i++) {
       var c = res[i];
       txt += "\n" + c.getName();
@@ -773,10 +773,10 @@ Battleside = (function() {
       rndCard = this.getRandomCardOnField();
       if(rndCard) {
         rndCard.__lock = true;
-        this.sendNotification(this.getName() + ": Monsters faction ability triggered! " + rndCard.getName());
+        this.sendNotification(this.getName() + "：怪物阵营能力触发！" + rndCard.getName());
       }
       else {
-        this.sendNotification(this.getName() + ": Monsters faction ability triggered! But no card found.");
+        this.sendNotification(this.getName() + "：怪物阵营能力触发！但没有符合条件的卡牌。");
       }
     }
     var cards1 = this.field[Card.TYPE.CLOSE_COMBAT].removeAll();
@@ -895,7 +895,7 @@ Battleside = (function() {
 
         self.wait();
         deferred.resolve("done");
-        self.sendNotificationTo(self.foe, self.getName() + " finished redraw phase.")
+        self.sendNotificationTo(self.foe, self.getName() + " 完成了选牌环节。")
 
       }
 
@@ -906,7 +906,7 @@ Battleside = (function() {
 
       self.wait();
       deferred.resolve("done");
-      self.sendNotificationTo(self.foe, self.getName() + " finished redraw phase.")
+      self.sendNotificationTo(self.foe, self.getName() + " 完成了选牌环节。")
     })
 
     return deferred;

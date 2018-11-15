@@ -19,7 +19,7 @@ module.exports = {
     type: 0
   },
   "redanian_foot_soldier": {
-    name: "Redanian Foot Soldier",
+    name: "瑞达尼亚步兵",
     power: 1,
     ability: null,
     img: "foot_soldier1",
@@ -27,7 +27,7 @@ module.exports = {
     type: 0
   },
   "poor_fucking_infantry": {
-    name: "Poor Fucking Infantry",
+    name: "烂渣步兵团",
     power: 1,
     ability: "tight_bond",
     img: "infantry",
@@ -35,7 +35,7 @@ module.exports = {
     type: 0
   },
   "yarpen_zigrin": {
-    name: "Yarpen Zigrin",
+    name: "亚尔潘·齐格林",
     power: 2,
     ability: null,
     img: "yarpen",
@@ -43,7 +43,7 @@ module.exports = {
     type: 0
   },
   "blue_stripes_commando": {
-    name: "Blue Stripes Commando",
+    name: "蓝旗营指挥官",
     power: 4,
     ability: "tight_bond",
     img: "commando",
@@ -51,7 +51,7 @@ module.exports = {
     type: 0
   },
   "sigismund_dijkstra": {
-    name: "Sigismund Dijkstra",
+    name: "西吉斯蒙德·迪科斯彻",
     power: 4,
     ability: "spy",
     img: "dijkstra",
@@ -59,7 +59,7 @@ module.exports = {
     type: 0
   },
   "prince_stennis": {
-    name: "Prince Stennis",
+    name: "史登尼斯王子",
     power: 5,
     ability: "spy",
     img: "stennis",
@@ -67,7 +67,7 @@ module.exports = {
     type: 0
   },
   "siegfried_of_denesle": {
-    name: "Siegfried of Denesle",
+    name: "丹索的齐格菲",
     power: 5,
     ability: null,
     img: "siegfried",
@@ -75,7 +75,7 @@ module.exports = {
     type: 0
   },
   "ves": {
-    name: "Ves",
+    name: "微丝",
     power: 5,
     ability: null,
     img: "ves",
@@ -83,7 +83,7 @@ module.exports = {
     type: 0
   },
   "vernon_roche": {
-    name: "Vernon Roche",
+    name: "弗农·罗契",
     power: 10,
     ability: "hero",
     img: "roche",
@@ -91,7 +91,7 @@ module.exports = {
     type: 0
   },
   "john_natalis": {
-    name: "John Natalis",
+    name: "约翰·纳塔利斯",
     power: 10,
     ability: "hero",
     img: "natalis",
@@ -99,7 +99,7 @@ module.exports = {
     type: 0
   },
   "sheldon_skaggs": {
-    name: "Sheldon Skaggs",
+    name: "谢尔顿‧史卡格",
     power: 4,
     ability: null,
     img: "skaggs",
@@ -107,7 +107,7 @@ module.exports = {
     type: 1
   },
   "sabrina_glevissig": {
-    name: "Sabrina Glevissig",
+    name: "萨宾娜‧格里维希格",
     power: 4,
     ability: null,
     img: "sabrina",
@@ -115,7 +115,7 @@ module.exports = {
     type: 1
   },
   "crinfrid_reavers_dragon_hunter": {
-    name: "Crinfrid Reaver's Dragon Hunter",
+    name: "钦弗里掠夺者巨龙猎人",
     power: 5,
     ability: "tight_bond",
     img: "crinfrid",
@@ -123,7 +123,7 @@ module.exports = {
     type: 1
   },
   "sile_de_tansarville": {
-    name: "Síle de Tansarville",
+    name: "席儿·坦沙维耶",
     power: 5,
     ability: null,
     img: "sile",
@@ -131,7 +131,7 @@ module.exports = {
     type: 1
   },
   "keira_metz": {
-    name: "Keira Metz",
+    name: "凯拉·梅兹",
     power: 5,
     ability: null,
     img: "keira",
@@ -139,7 +139,7 @@ module.exports = {
     type: 1
   },
   "dethmold": {
-    name: "Dethmold",
+    name: "戴斯摩",
     power: 6,
     ability: null,
     img: "dethmold",
@@ -147,7 +147,7 @@ module.exports = {
     type: 1
   },
   "kaedweni_siege_expert": {
-    name: "Kaedweni Siege Expert",
+    name: "科德温攻城专家",
     power: 1,
     ability: "morale_boost",
     img: "siege_expert1",
@@ -155,7 +155,7 @@ module.exports = {
     type: 2
   },
   "dun_banner_medic": {
-    name: "Dun Banner Medic",
+    name: "褐旗营医疗兵",
     power: 5,
     ability: "medic",
     img: "medic",
@@ -163,7 +163,7 @@ module.exports = {
     type: 2
   },
   "ballista": {
-    name: "Ballista",
+    name: "弩车",
     power: 6,
     ability: null,
     img: "ballista1",
@@ -171,7 +171,7 @@ module.exports = {
     type: 2
   },
   "trebuchet": {
-    name: "Trebuchet",
+    name: "投石机",
     power: 6,
     ability: null,
     img: "trebuchet1",
@@ -179,7 +179,7 @@ module.exports = {
     type: 2
   },
   "thaler": {
-    name: "Thaler",
+    name: "泰勒",
     power: 1,
     ability: "spy",
     img: "thaler",
@@ -187,7 +187,7 @@ module.exports = {
     type: 2
   },
   "foltest_king_of_temeria": {
-    name: "Foltest: King of Temeria",
+    name: "弗尔特斯特：泰梅利亚之王",
     power: -1,
     ability: "foltest_leader1",
     img: "foltest_king",
@@ -195,7 +195,7 @@ module.exports = {
     type: 3
   },
   "foltest_lord_commander": {
-    name: "Foltest: Lord Commander",
+    name: "弗尔特斯特：君王指挥官",
     power: -1,
     ability: "foltest_leader2",
     img: "foltest_commander",
@@ -203,7 +203,7 @@ module.exports = {
     type: 3
   },
   "foltest_siegemaster": {
-    name: "Foltest: The Siegemaster",
+    name: "弗尔特斯特：工程专家",
     power: -1,
     ability: "foltest_leader3",
     img: "foltest_siege",
@@ -211,7 +211,7 @@ module.exports = {
     type: 3
   },
   "foltest_forged": {
-    name: "Foltest: The Steel-Forged",
+    name: "弗尔特斯特：钢铁熔炉",
     power: -1,
     ability: "foltest_leader4",
     img: "foltest_forged",
@@ -219,7 +219,7 @@ module.exports = {
     type: 3
   },
   "philippa_eilhart": {
-    name: "Philippa Eilhart",
+    name: "菲丽芭·艾哈特",
     power: 10,
     ability: "hero",
     img: "eilhart",
@@ -227,7 +227,7 @@ module.exports = {
     type: 1
   },
   "esterad_thyssen": {
-    name: "Esterad Thyssen",
+    name: "艾斯特达·泰森",
     power: 10,
     ability: "hero",
     img: "thyssen",
@@ -235,7 +235,7 @@ module.exports = {
     type: 0
   },
   "siege_tower": {
-    name: "Siege Tower",
+    name: "攻城塔",
     power: 6,
     ability: null,
     img: "siege_tower",
@@ -243,7 +243,7 @@ module.exports = {
     type: 2
   },
   "catapult": {
-    name: "Catapult",
+    name: "投石车",
     power: 8,
     ability: "tight_bond",
     img: "catapult",
@@ -253,7 +253,7 @@ module.exports = {
 
 
   "decoy": {
-    name: "Decoy",
+    name: "诱饵",
     power: -1,
     ability: "decoy",
     img: "decoy",
@@ -261,7 +261,7 @@ module.exports = {
     type: 4
   },
   "scorch": {
-    name: "Scorch",
+    name: "灼烧",
     power: -1,
     ability: "scorch_card",
     img: "scorch",
@@ -269,7 +269,7 @@ module.exports = {
     type: 4
   },
   "commanders_horn": {
-    name: "Commander's Horn",
+    name: "战斗号角",
     power: -1,
     ability: "commanders_horn_card",
     img: "horn",
@@ -279,7 +279,7 @@ module.exports = {
 
 
   "impenetrable_fog": {
-    name: "Impenetrable Fog",
+    name: "大雾",
     power: -1,
     ability: "weather_fog",
     img: "fog",
@@ -287,7 +287,7 @@ module.exports = {
     type: 5
   },
   "biting_frost": {
-    name: "Biting Frost",
+    name: "霜冻",
     power: -1,
     ability: "weather_frost",
     img: "frost",
@@ -295,7 +295,7 @@ module.exports = {
     type: 5
   },
   "torrential_rain": {
-    name: "Torrential Rain",
+    name: "暴雨",
     power: -1,
     ability: "weather_rain",
     img: "rain",
@@ -303,7 +303,7 @@ module.exports = {
     type: 5
   },
   "clear_weather": {
-    name: "Clear Weather",
+    name: "晴天",
     power: -1,
     ability: "weather_clear",
     img: "clear",
@@ -312,7 +312,7 @@ module.exports = {
   },
 
   "dandelion": {
-    name: "Dandelion",
+    name: "丹德里恩",
     power: 2,
     ability: "commanders_horn",
     img: "dandelion",
@@ -320,7 +320,7 @@ module.exports = {
     type: 0
   },
   "avallach": {
-    name: "Avallac'h",
+    name: "阿瓦拉克",
     power: 0,
     ability: ["hero", "spy"],
     img: "avallach",
@@ -328,7 +328,7 @@ module.exports = {
     type: 0
   },
   "villentretenmerth": {
-    name: "Villentretenmerth ",
+    name: "维兰特雷坦梅斯",
     power: 7,
     ability: "scorch",
     img: "villentretenmerth",
@@ -337,7 +337,7 @@ module.exports = {
   },
 
   "francesca_pureblood_elf": {
-    name: "Francesca, Pureblood Elf",
+    name: "法兰茜丝卡：纯血精灵",
     power: -1,
     ability: "francesca_leader1",
     img: "francesca_pureblood",
@@ -345,7 +345,7 @@ module.exports = {
     type: 3
   },
   "francesca_the_beautiful": {
-    name: "Francesca The Beautiful",
+    name: "法兰茜丝卡：美人",
     power: -1,
     ability: "francesca_leader2",
     img: "francesca_beautiful",
@@ -353,7 +353,7 @@ module.exports = {
     type: 3
   },
   "francesca_daisy_of_the_valley": {
-    name: "Francesca, Daisy of The Valley",
+    name: "法兰茜丝卡：山谷中的雏菊",
     power: -1,
     ability: "francesca_leader3",
     img: "francesca_daisy",
@@ -361,7 +361,7 @@ module.exports = {
     type: 3
   },
   "francesca_queen_of_dol_blathanna": {
-    name: "Francesca, Queen of Dol Blathanna",
+    name: "法兰茜丝卡：多尔·布雷坦纳的女王",
     power: -1,
     ability: "francesca_leader4",
     img: "francesca_queen",
@@ -369,7 +369,7 @@ module.exports = {
     type: 3
   },
   "saesenthessis": {
-    name: "Saesenthessis",
+    name: "萨琪亚",
     power: 10,
     ability: "hero",
     img: "saesenthessis",
@@ -377,7 +377,7 @@ module.exports = {
     type: 1
   },
   "iorveth": {
-    name: "Iorveth",
+    name: "伊欧菲斯",
     power: 10,
     ability: "hero",
     img: "iorveth",
@@ -385,7 +385,7 @@ module.exports = {
     type: 1
   },
   "isengrim_faoiltiarnah": {
-    name: "Isengrim Faoiltiarnah",
+    name: "伊森格林·法欧提亚纳",
     power: 10,
     ability: ["hero", "morale_boost"],
     img: "isengrim",
@@ -393,7 +393,7 @@ module.exports = {
     type: 0
   },
   "eithne": {
-    name: "Eithne",
+    name: "艾思娜",
     power: 10,
     ability: "hero",
     img: "eithne",
@@ -401,7 +401,7 @@ module.exports = {
     type: 1
   },
   "havekar_healer": {
-    name: "Havekar Healer",
+    name: "私枭医生",
     power: 0,
     ability: "medic",
     img: "healer",
@@ -409,7 +409,7 @@ module.exports = {
     type: 1
   },
   "riordain": {
-    name: "Riordain",
+    name: "李欧丹恩",
     power: 1,
     ability: null,
     img: "riordain",
@@ -417,7 +417,7 @@ module.exports = {
     type: 1
   },
   "toruviel": {
-    name: "Toruviel",
+    name: "托鲁维尔",
     power: 2,
     ability: null,
     img: "toruviel",
@@ -425,7 +425,7 @@ module.exports = {
     type: 1
   },
   "elven_skirmisher": {
-    name: "Elven Skirmisher",
+    name: "精灵好斗分子",
     power: 2,
     ability: "muster",
     musterType: "skirmisher",
@@ -434,7 +434,7 @@ module.exports = {
     type: 1
   },
   "dwarven_skirmisher": {
-    name: "Dwarven Skirmisher",
+    name: "矮人好斗分子",
     power: 3,
     ability: "muster",
     musterType: "skirmisher",
@@ -443,7 +443,7 @@ module.exports = {
     type: 0
   },
   "ciaran_aep_easnillien": {
-    name: "Ciaran aep Easnillien",
+    name: "席朗·依斯尼蓝",
     power: 3,
     ability: "agile",
     img: "easnillien",
@@ -451,7 +451,7 @@ module.exports = {
     type: 1
   },
   "vrihedd_brigade_recruit": {
-    name: "Vrihedd Brigade Recruit",
+    name: "维里赫德见习生",
     power: 4,
     ability: null,
     img: "recruit",
@@ -459,7 +459,7 @@ module.exports = {
     type: 1
   },
   "dol_blathanna_archer": {
-    name: "Dol Blathanna Archer",
+    name: "多尔·布雷坦纳的女王弓箭手",
     power: 4,
     ability: null,
     img: "archer",
@@ -475,7 +475,7 @@ module.exports = {
     type: 0
   },*/
   "havekar_smuggler": {
-    name: "Havekar Smuggler",
+    name: "私枭支援",
     power: 5,
     ability: "muster",
     musterType: "smuggler",
@@ -484,7 +484,7 @@ module.exports = {
     type: 0
   },
   "mahakaman_defender": {
-    name: "Mahakaman Defender",
+    name: "玛哈坎守护者",
     power: 5,
     ability: null,
     img: "defender2",
@@ -492,7 +492,7 @@ module.exports = {
     type: 0
   },
   "vrihedd_brigade_veteran": {
-    name: "Vrihedd Brigade Veteran",
+    name: "维里赫德旅老兵",
     power: 5,
     ability: "agile",
     img: "veteran1",
@@ -500,7 +500,7 @@ module.exports = {
     type: 0
   },
   "dennis_cranmer": {
-    name: "Dennis Cranmer",
+    name: "丹尼斯·克蓝莫",
     power: 6,
     ability: null,
     img: "cranmer",
@@ -508,7 +508,7 @@ module.exports = {
     type: 0
   },
   "filavandrel_aen_fidhail": {
-    name: "Filavandrel aén Fidháil",
+    name: "费拉万卓列",
     power: 6,
     ability: "agile",
     img: "fidhail",
@@ -516,7 +516,7 @@ module.exports = {
     type: 1
   },
   "ida_emean_aep_sivney": {
-    name: "Ida Emean aep Sivney",
+    name: "艾达·艾敏",
     power: 6,
     ability: null,
     img: "sivney",
@@ -524,7 +524,7 @@ module.exports = {
     type: 1
   },
   "yaevinn": {
-    name: "Yaevinn",
+    name: "亚伊文",
     power: 6,
     ability: "agile",
     img: "yaevinn",
@@ -532,7 +532,7 @@ module.exports = {
     type: 0
   },
   "barclay_els": {
-    name: "Barclay Els",
+    name: "巴克莱·艾尔斯",
     power: 6,
     ability: "agile",
     img: "barclay",
@@ -540,7 +540,7 @@ module.exports = {
     type: 0
   },
   "dol_blathanna_scout": {
-    name: "Dol Blathanna Scout",
+    name: "多尔布雷坦纳侦察兵",
     power: 6,
     ability: "agile",
     img: "scout2",
@@ -548,7 +548,7 @@ module.exports = {
     type: 0
   },
   "milva": {
-    name: "Milva",
+    name: "米尔瓦",
     power: 10,
     ability: "morale_boost",
     img: "milva",
@@ -558,7 +558,7 @@ module.exports = {
 
 
   "eredin_commander_of_the_red_riders": {
-    name: "Eredin, Commander of the Red Riders",
+    name: "艾瑞汀:红骑士指挥官",
     power: -1,
     ability: "eredin_leader1",
     img: "eredin_commander",
@@ -566,7 +566,7 @@ module.exports = {
     type: 3
   },
   "eredin_bringer_of_death": {
-    name: "Eredin, Bringer of Death",
+    name: "艾瑞汀:死亡使者",
     power: -1,
     ability: "eredin_leader2",
     img: "eredin_bringer",
@@ -574,7 +574,7 @@ module.exports = {
     type: 3
   },
   "eredin_destroyer_of_worlds": {
-    name: "Eredin, Destroyer of Worlds",
+    name: "艾瑞汀：世界毁灭者",
     power: -1,
     ability: "eredin_leader3",
     img: "eredin_destroyer",
@@ -582,7 +582,7 @@ module.exports = {
     type: 3
   },
   "eredin_king_of_the_wild_hunt": {
-    name: "Eredin, King of The Wild Hunt",
+    name: "艾瑞汀：狂猎之王",
     power: -1,
     ability: "eredin_leader4",
     img: "eredin_king",
@@ -590,7 +590,7 @@ module.exports = {
     type: 3
   },
   "kayran": {
-    name: "Kayran",
+    name: "巨章鱼怪",
     power: 8,
     ability: ["hero", "morale_boost", "agile"],
     img: "kayran",
@@ -598,7 +598,7 @@ module.exports = {
     type: 1
   },
   "leshen": {
-    name: "Leshen",
+    name: "鹿首精",
     power: 10,
     ability: "hero",
     img: "leshen",
@@ -606,7 +606,7 @@ module.exports = {
     type: 1
   },
   "imlerith": {
-    name: "Imlerith",
+    name: "伊勒瑞斯",
     power: 10,
     ability: "hero",
     img: "imlerith",
@@ -614,7 +614,7 @@ module.exports = {
     type: 0
   },
   "draug": {
-    name: "Draug",
+    name: "战灵",
     power: 10,
     ability: "hero",
     img: "draug",
@@ -622,7 +622,7 @@ module.exports = {
     type: 0
   },
   "ghoul": {
-    name: "Ghoul",
+    name: "尸鬼",
     power: 1,
     ability: "muster",
     musterType: "ghoul",
@@ -631,7 +631,7 @@ module.exports = {
     type: 0
   },
   "nekker": {
-    name: "Nekker",
+    name: "孽鬼",
     power: 2,
     ability: "muster",
     musterType: "nekker",
@@ -640,7 +640,7 @@ module.exports = {
     type: 0
   },
   "wyvern": {
-    name: "Wyvern",
+    name: "翼手龙",
     power: 2,
     ability: null,
     img: "wyvern",
@@ -648,7 +648,7 @@ module.exports = {
     type: 1
   },
   "foglet": {
-    name: "Foglet",
+    name: "小雾妖",
     power: 2,
     ability: null,
     img: "foglet",
@@ -656,7 +656,7 @@ module.exports = {
     type: 0
   },
   "celaeno_harpy": {
-    name: "Celaeno Harpy",
+    name: "赛尔伊诺鹰身女妖",
     power: 2,
     ability: "agile",
     img: "celaeno_harpy",
@@ -664,7 +664,7 @@ module.exports = {
     type: 1
   },
   "gargoyle": {
-    name: "Gargoyle",
+    name: "石像鬼",
     power: 2,
     ability: null,
     img: "gargoyle",
@@ -672,7 +672,7 @@ module.exports = {
     type: 1
   },
   "cockatrice": {
-    name: "Cockatrice",
+    name: "石化鸡蛇",
     power: 2,
     ability: null,
     img: "cockatrice",
@@ -680,7 +680,7 @@ module.exports = {
     type: 1
   },
   "harpy": {
-    name: "Harpy",
+    name: "人面妖鸟",
     power: 2,
     ability: "agile",
     img: "harpy",
@@ -688,7 +688,7 @@ module.exports = {
     type: 1
   },
   "endrega": {
-    name: "Endrega",
+    name: "安德莱格",
     power: 2,
     ability: null,
     img: "endrega",
@@ -696,7 +696,7 @@ module.exports = {
     type: 1
   },
   "vampire_bruxa": {
-    name: "Vampire: Bruxa",
+    name: "吸血鬼女",
     power: 4,
     ability: "muster",
     musterType: "vampire",
@@ -705,7 +705,7 @@ module.exports = {
     type: 0
   },
   "vampire_fleder": {
-    name: "Vampire: Fleder",
+    name: "吸血蝠翼魔",
     power: 4,
     ability: "muster",
     musterType: "vampire",
@@ -714,7 +714,7 @@ module.exports = {
     type: 0
   },
   "vampire_garkain": {
-    name: "Vampire: Garkain",
+    name: "吸血蝠翼脑魔",
     power: 4,
     ability: "muster",
     musterType: "vampire",
@@ -723,7 +723,7 @@ module.exports = {
     type: 0
   },
   "vampire_ekimmara": {
-    name: "Vampire: Ekimmara",
+    name: "吸血血魔",
     power: 4,
     ability: "muster",
     musterType: "vampire",
@@ -732,7 +732,7 @@ module.exports = {
     type: 0
   },
   "arachas": {
-    name: "Arachas",
+    name: "蟹蜘蛛",
     power: 4,
     ability: "muster",
     musterType: "arachas",
@@ -741,7 +741,7 @@ module.exports = {
     type: 0
   },
   "botchling": {
-    name: "Botchling",
+    name: "尸婴",
     power: 4,
     ability: null,
     img: "botchling",
@@ -749,7 +749,7 @@ module.exports = {
     type: 0
   },
   "forktail": {
-    name: "Forktail",
+    name: "叉尾龙",
     power: 5,
     ability: null,
     img: "forktail",
@@ -757,15 +757,15 @@ module.exports = {
     type: 0
   },
   "plague_maiden": {
-    name: "Plague Maiden",
+    name: "瘟疫妖女",
     power: 5,
     ability: null,
-    img: "forktail",
+    img: "plague_maiden",
     faction: "monster",
     type: 0
   },
   "griffin": {
-    name: "Griffin",
+    name: "格里芬",
     power: 5,
     ability: null,
     img: "griffin",
@@ -773,7 +773,7 @@ module.exports = {
     type: 0
   },
   "werewolf": {
-    name: "Werewolf",
+    name: "狼人",
     power: 5,
     ability: null,
     img: "werewolf",
@@ -781,7 +781,7 @@ module.exports = {
     type: 0
   },
   "frightener": {
-    name: "Frightener",
+    name: "畏惧者",
     power: 5,
     ability: null,
     img: "frightener",
@@ -789,7 +789,7 @@ module.exports = {
     type: 0
   },
   "ice_giant": {
-    name: "Ice Giant",
+    name: "冰霜巨人",
     power: 5,
     ability: null,
     img: "ice_giant",
@@ -797,7 +797,7 @@ module.exports = {
     type: 2
   },
   "grave_hag": {
-    name: "Grave Hag",
+    name: "墓穴女巫",
     power: 5,
     ability: null,
     img: "grave_hag",
@@ -814,7 +814,7 @@ module.exports = {
     type: 0
   },*/
   "crone_whispess": {
-    name: "Crone: Whispess",
+    name: "呢喃婆",
     power: 6,
     ability: "muster",
     musterType: "crone",
@@ -823,7 +823,7 @@ module.exports = {
     type: 0
   },
   "crone_brewess": {
-    name: "Crone: Brewess",
+    name: "煮婆",
     power: 6,
     ability: "muster",
     musterType: "crone",
@@ -832,7 +832,7 @@ module.exports = {
     type: 0
   },
   "crone_weavess": {
-    name: "Crone: Weavess",
+    name: "织婆",
     power: 6,
     ability: "muster",
     musterType: "crone",
@@ -841,7 +841,7 @@ module.exports = {
     type: 0
   },
   "arachas_behemoth": {
-    name: "Arachas Behemoth",
+    name: "巨型蟹蜘蛛",
     power: 6,
     ability: "muster",
     musterType: "arachas",
@@ -850,7 +850,7 @@ module.exports = {
     type: 2
   },
   "fire_elemental": {
-    name: "Fire Elemental",
+    name: "火元素",
     power: 6,
     ability: null,
     img: "fire_elemental",
@@ -858,7 +858,7 @@ module.exports = {
     type: 2
   },
   "fiend": {
-    name: "Fiend",
+    name: "恶魔",
     power: 6,
     ability: null,
     img: "fiend",
@@ -866,7 +866,7 @@ module.exports = {
     type: 0
   },
   "earth_elemental": {
-    name: "Earth Elemental",
+    name: "土元素",
     power: 6,
     ability: null,
     img: "earth_elemental",
@@ -877,7 +877,7 @@ module.exports = {
 
   //nilfgaardian
   "emreis_relentless": {
-    name: "Emhyr vas Emreis the Relentless",
+    name: "恩希尔·恩瑞斯：冷血无情",
     power: -1,
     ability: "emreis_leader4",
     img: "emhyr_relentless",
@@ -893,7 +893,7 @@ module.exports = {
     type: 1
   },
   "letho_of_gulet": {
-    name: "Letho of Gulet",
+    name: "古雷特的雷索",
     power: 10,
     ability: "hero",
     img: "letho",
@@ -901,7 +901,7 @@ module.exports = {
     type: 0
   },
   "morvran_voorhis": {
-    name: "Morvran Voorhis",
+    name: "莫尔凡·符里斯",
     power: 10,
     ability: "hero",
     img: "voorhis",
@@ -909,7 +909,7 @@ module.exports = {
     type: 2
   },
   "menno_coehoorn": {
-    name: "Menno Coehoorn",
+    name: "梅诺·寇赫伦",
     power: 10,
     ability: ["hero", "medic"],
     img: "menno",
@@ -917,7 +917,7 @@ module.exports = {
     type: 0
   },
   "siege_technician": {
-    name: "Siege Technician",
+    name: "攻城技术师",
     power: 0,
     ability: "medic",
     img: "siege_tech",
@@ -925,7 +925,7 @@ module.exports = {
     type: 2
   },
   "etolian_auxiliary_archers": {
-    name: "Etolian Auxiliary Archers",
+    name: "弓箭手支援",
     power: 1,
     ability: "medic",
     img: "aux_archers1",
@@ -933,7 +933,7 @@ module.exports = {
     type: 1
   },
   "albrich": {
-    name: "Albrich",
+    name: "亚伯力奇",
     power: 2,
     ability: null,
     img: "albrich",
@@ -941,7 +941,7 @@ module.exports = {
     type: 1
   },
   "sweers": {
-    name: "Sweers",
+    name: "杂牌军",
     power: 2,
     ability: null,
     img: "sweers",
@@ -949,7 +949,7 @@ module.exports = {
     type: 2
   },
   "nausicaa_cavalry_rider": {
-    name: "Nausicaa Cavalry Rider",
+    name: "那乌西卡骑兵",
     power: 2,
     ability: "tight_bond",
     img: "nausicaa_cavalry_rider",
@@ -957,7 +957,7 @@ module.exports = {
     type: 0
   },
   "vreemde": {
-    name: "Vreemde",
+    name: "弗林姆德",
     power: 2,
     ability: null,
     img: "vreemde",
@@ -965,7 +965,7 @@ module.exports = {
     type: 0
   },
   "rotten_mangonel": {
-    name: "Rotten Mangonel",
+    name: "腐烂的投石机",
     power: 3,
     ability: null,
     img: "rotten_mangonel",
@@ -973,7 +973,7 @@ module.exports = {
     type: 2
   },
   "morteisen": {
-    name: "Morteisen",
+    name: "莫坦森",
     power: 3,
     ability: null,
     img: "morteisen",
@@ -981,7 +981,7 @@ module.exports = {
     type: 0
   },
   "puttkammer": {
-    name: "Puttkammer",
+    name: "普特卡摩",
     power: 3,
     ability: null,
     img: "puttkammer",
@@ -989,7 +989,7 @@ module.exports = {
     type: 1
   },
   "impera_brigade_guard": {
-    name: "Impera Brigade Guard",
+    name: "帝国禁卫军",
     power: 3,
     ability: "tight_bond",
     img: "impera_brigade_guard",
@@ -997,7 +997,7 @@ module.exports = {
     type: 0
   },
   "vanhemar": {
-    name: "Vanhemar",
+    name: "凡赫玛",
     power: 4,
     ability: null,
     img: "vanhemar",
@@ -1005,7 +1005,7 @@ module.exports = {
     type: 1
   },
   "vattier_de_rideaux": {
-    name: "Vattier de Rideaux",
+    name: "瓦提尔·德·李道克斯",
     power: 4,
     ability: "spy",
     img: "vattier",
@@ -1013,7 +1013,7 @@ module.exports = {
     type: 0
   },
   "rainfarn": {
-    name: "Rainfarn",
+    name: "雷恩法",
     power: 4,
     ability: null,
     img: "rainfarn",
@@ -1021,7 +1021,7 @@ module.exports = {
     type: 0
   },
   "cynthia": {
-    name: "Cynthia",
+    name: "辛西亚",
     power: 4,
     ability: null,
     img: "cynthia",
@@ -1029,7 +1029,7 @@ module.exports = {
     type: 1
   },
   "zerrikanian_fire_scorpion": {
-    name: "Zerrikanian Fire Scorpion",
+    name: "瑟瑞卡尼亚火蝎",
     power: 5,
     ability: null,
     img: "fire_scorpion",
@@ -1037,7 +1037,7 @@ module.exports = {
     type: 2
   },
   "young_emmisary": {
-    name: "Young Emissary",
+    name: "年轻的特使",
     power: 5,
     ability: "tight_bond",
     img: "young_emissary1",
@@ -1045,7 +1045,7 @@ module.exports = {
     type: 0
   },
   "renuald_aep_matsen": {
-    name: "Renuald aep Matsen",
+    name: "雷努阿·马特森",
     power: 5,
     ability: null,
     img: "renauld",
@@ -1053,7 +1053,7 @@ module.exports = {
     type: 1
   },
   "siege_engineer": {
-    name: "Siege Engineer",
+    name: "攻城工程师",
     power: 6,
     ability: null,
     img: "siege_engineer",
@@ -1061,7 +1061,7 @@ module.exports = {
     type: 2
   },
   "cahir_mawr_dyffryn_aep_ceallach": {
-    name: "Cahir Mawr Dyffryn aep Ceallach",
+    name: "卡西尔·莫瓦·迪弗林·契拉克",
     power: 6,
     ability: null,
     img: "ceallach",
@@ -1069,7 +1069,7 @@ module.exports = {
     type: 0
   },
   "fringilla_vigo": {
-    name: "Fringilla Vigo",
+    name: "芙琳吉拉·薇歌",
     power: 6,
     ability: null,
     img: "vigo",
@@ -1077,7 +1077,7 @@ module.exports = {
     type: 1
   },
   "assire_var_anahid": {
-    name: "Assire var Anahid",
+    name: "艾希蕾·阿纳兴",
     power: 6,
     ability: null,
     img: "assire_var_anahid",
@@ -1085,7 +1085,7 @@ module.exports = {
     type: 1
   },
   "shilard_fitz_oesterlen": {
-    name: "Shilard Fitz-Oesterlen",
+    name: "希拉德·费兹奥耶斯泰兰",
     power: 7,
     ability: "spy",
     img: "shilard",
@@ -1093,7 +1093,7 @@ module.exports = {
     type: 0
   },
   "stefan_skellen": {
-    name: "Stefan Skellen",
+    name: "史提芬·史凯伦",
     power: 9,
     ability: "spy",
     img: "stefan_skellen",
@@ -1101,7 +1101,7 @@ module.exports = {
     type: 0
   },
   "heavy_zerrikanian_fire_scorpion": {
-    name: "Heavy Zerrikanian Fire Scorpion",
+    name: "瑟瑞卡尼亚重型火蝎",
     power: 10,
     ability: null,
     img: "heavy_fire_scorpion",
@@ -1109,7 +1109,7 @@ module.exports = {
     type: 2
   },
   "black_infantry_archer": {
-    name: "Black Infantry Archer",
+    name: "黑步兵弓箭手",
     power: 10,
     ability: null,
     img: "black_infantry_archer1",

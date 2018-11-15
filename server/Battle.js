@@ -112,7 +112,7 @@ var Battle = (function(){
     .then(function(){
       this.on("NextTurn", this.switchTurn);
       var side = Math.random() > 0.5 ? this.p1 : this.p2;
-      this.sendNotification(side.getName() + " begins!");
+      this.sendNotification(side.getName() + " 先手！");
       this.switchTurn(side);
     }.bind(this));
 
@@ -155,7 +155,7 @@ var Battle = (function(){
     if(this.checkIfIsOver()){
       //console.log("its over!");
       var winner = this.getWinner();
-      winner = winner ? winner.getName() : "nobody";
+      winner = winner ? winner.getName() : "没有人";
       this.gameOver(winner);
       this.update();
       return;
@@ -165,13 +165,13 @@ var Battle = (function(){
     this.p2.resetNewRound();
 
     //console.log("start new round!");
-    this.sendNotification("Start new round!");
+    this.sendNotification("开始了新的游戏！");
 
 
     if(winner.deck.getFaction() === Deck.FACTION.NORTHERN_REALM && !lastRound.isTie){
       winner.draw(1);
       //console.log(winner.getName() + " draws 1 extra card! (Northern ability)");
-      this.sendNotification(winner.getName() + " draws 1 extra card! (Northern ability)");
+      this.sendNotification(winner.getName() + " 摸了一张牌（北方阵营能力）");
     }
 
     this.update();
@@ -186,7 +186,7 @@ var Battle = (function(){
       this.waitForScoiatael(this.p2);
     }
     else {
-      this.sendNotification(winner.getName() + " begins!");
+      this.sendNotification(winner.getName() + " 先手！");
       this.switchTurn(winner);
     }
   }
@@ -195,7 +195,7 @@ var Battle = (function(){
     var self = this;
     side.turn();
     side.foe.wait();
-    self.sendNotification(side.getName() + " decides who starts first");
+    self.sendNotification(side.getName() + " 正在决定谁先手。");
     side.send("request:chooseWhichSideBegins", null, true);
     side.socket.once("response:chooseWhichSideBegins", function(data){
       //console.log("which side? ", data.side);
@@ -203,7 +203,7 @@ var Battle = (function(){
       if(data.side !== "p1" && data.side !== "p2")
         throw new Error("Unknown side property! - ", data.side);
 
-      self.sendNotification(side.getName() + " choose " + self[data.side].getName());
+      self.sendNotification(side.getName() + " 选择了 " + self[data.side].getName());
       self.switchTurn(self[data.side]);
     })
   }
@@ -347,7 +347,7 @@ var Battle = (function(){
     if(this.p1.deck.getFaction() === Deck.FACTION.NILFGAARDIAN_EMPIRE && this.p1.deck.getFaction() !== this.p2.deck.getFaction()){
       this.p2.removeRuby();
       //console.log(this.p1.getName() + " wins the tie! (nilfgaardian ability)");
-      this.sendNotification(this.p1.getName() + " wins the tie! (nilfgaardian ability)");
+      this.sendNotification(this.p1.getName() + " 赢了本轮！（尼弗迦德能力）");
       return {
         loser: this.p2,
         isTie: false
@@ -356,7 +356,7 @@ var Battle = (function(){
     if(this.p2.deck.getFaction() === Deck.FACTION.NILFGAARDIAN_EMPIRE && this.p1.deck.getFaction() !== this.p2.deck.getFaction()){
       this.p1.removeRuby();
       //console.log(this.p2.getName() + " wins the tie! (nilfgaardian ability)");
-      this.sendNotification(this.p2.getName() + " wins the tie! (nilfgaardian ability)");
+      this.sendNotification(this.p2.getName() + " 赢了本轮！（尼弗迦德能力）");
       return {
         loser: this.p1,
         isTie: false
